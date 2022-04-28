@@ -1,13 +1,146 @@
-body {
+html, body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  font-family: 'Trebuchet MS', Arial, sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.app {
+  display: flex;
 }
+
+/*------ nav -------*/
+
+nav {
+  height: 100vh;
+  background: rgb(43, 43, 63);
+  color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+nav .logo-container,
+nav .controls-container {
+  padding: 40px 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+nav .logo-container img {
+ width: 20px;
+}
+
+nav .icon {
+  color: #fff;
+}
+
+/*------ dashboard -------*/
+
+.dashboard {
+  padding: 2rem;
+  width: 100%;
+  background: rgb(230, 198, 188);
+}
+
+.dashboard .ticket-container {
+  height: 80vh;
+  overflow: scroll;
+}
+
+/*------ TicketCard -------*/
+
+.ticket-card {
+  display: flex;
+
+}
+
+/* .ticket-card > * {
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+  background: #999;
+  margin: 1rem .1rem;
+  text-transform: uppercase;
+} */
+
+.link-area {
+  display: flex;
+  width: 90%;
+  text-decoration: none;
+}
+
+.link-area > * {
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+  background: #999;
+  margin: 1rem .1rem;
+  text-transform: uppercase;
+  width: 100%;
+  border-radius: 5px;
+  
+}
+
+.ticket-card .ticket-color {
+  width: 2%;
+  padding: 0;
+  border-radius: 5px;
+}
+
+.ticket-card .avatar-container {
+  display: flex;
+  justify-content: center;
+}
+
+.ticket-card .image-container {
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.ticket-card .image-container img {
+  width: 100%;
+}
+
+.priority-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.star-container {
+  display: flex;
+  gap: 1rem;
+}
+.progress-content {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.progress-bar-container {
+  width: 100%;
+  border: 1px solid rgb(226, 226, 226);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-bar-container .progress-bar {
+  background: rgb(150, 48, 214);
+  height: 20px;
+}
+
+.delete-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 8%;
+  margin: 1rem 0;
+  background: rgb(251, 62, 62);
+  border-radius: 5px;
+}
+
+
